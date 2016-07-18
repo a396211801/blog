@@ -13,7 +13,7 @@ class Controller_Index extends Blog_Web
 
     public function IndexAction()
     {
-    echo 123;exit;
-//        $this -> display("index/index");
+//    echo 123;exit;
+        $this -> display("index/index");
     }
 }
