@@ -57,22 +57,22 @@ class Bootstrap extends Yaf_Bootstrap_Abstract
      * 自定义视图引擎
      * */
 
-    public function _initLayout(Yaf_Dispatcher $dispatcher)
-    {
-        $layout = new Layout($this->_config->application->layout->directory);
-        $dispatcher->setView($layout);
-    }
+//    public function _initLayout(Yaf_Dispatcher $dispatcher)
+//    {
+//        $layout = new Layout($this->_config->application->layout->directory);
+//        $dispatcher->setView($layout);
+//    }
 
     /**
      * 定义错误常量
      */
-    /*public function _initErrorConst()
+    public function _initErrorConst()
     {
         //URL参数错误
         define("YAF_ERR_URL", 600);
         //数据错误
         define("YAF_ERR_DATA", 601);
-    }*/
+    }
 
 
 
