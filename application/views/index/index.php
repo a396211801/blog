@@ -5,7 +5,7 @@
             <p>为自己掘一个坟墓来葬心，红尘一梦，不再追寻。</p>
             <p>加了锁的青春，不会再因谁而推开心门。</p>
         </ul>
-        <div class="avatar"><a href="#"><span>杨青</span></a> </div>
+        <div class="avatar"><a href="#"><span>米饭加盐</span></a> </div>
     </section>
 </div>
 <div class="template">

@@ -2,9 +2,9 @@
 <html>
 <head>
     <meta charset="gb2312">
-    <title>个人博客模板（寻梦）</title>
-    <meta name="keywords" content="个人博客模板,博客模板" />
-    <meta name="description" content="寻梦主题的个人博客模板，优雅、稳重、大气,低调。" />
+    <title>米饭加盐（测试版）</title>
+    <meta name="keywords" content="米饭加盐（测试版）,博客模板" />
+    <meta name="description" content="测试版主题的个人博客模板，优雅、稳重、大气,低调。" />
     <link href="css/base.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
     <!--[if lt IE 9]>
