@@ -41,16 +41,16 @@ class Bootstrap extends Yaf_Bootstrap_Abstract
 
     public function _initRoutes(Yaf_Dispatcher $dispatcher)
     {
-        $router = $dispatcher->getRouter();
-        //Index前页
-        //对应控制器和里面的action
-        $route = new Yaf_Route_Rewrite(
-            'index.html/',
-            array('controller'=>'Index',
-                    'action'=>'index'
-                    )
-        );
-        $router->addRoute('Index_index',$route);
+//        $router = $dispatcher->getRouter();
+//        //Index前页
+//        //对应控制器和里面的action
+//        $route = new Yaf_Route_Rewrite(
+//            'index.html/',
+//            array('controller'=>'Index',
+//                    'action'=>'index'
+//                    )
+//        );
+//        $router->addRoute('Index_index',$route);
     }
 
     /**
@@ -66,13 +66,13 @@ class Bootstrap extends Yaf_Bootstrap_Abstract
     /**
      * 定义错误常量
      */
-    public function _initErrorConst()
-    {
-        //URL参数错误
-        define("YAF_ERR_URL", 600);
-        //数据错误
-        define("YAF_ERR_DATA", 601);
-    }
+//    public function _initErrorConst()
+//    {
+//        //URL参数错误
+//        define("YAF_ERR_URL", 600);
+//        //数据错误
+//        define("YAF_ERR_DATA", 601);
+//    }
 
 
 
