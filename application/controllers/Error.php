@@ -3,12 +3,12 @@
 /**
  * User: Administrator
  */
-class Controller_Error extends Blog_Web
+class Controller_Error extends Yaf_Controller_Abstract
 {
-        public function init()
-        {
-            parent::init();
-        }
+//        public function init()
+//        {
+//            parent::init();
+//        }
 
         public function errorAction($exception){
 //            Yaf_Dispatcher::getInstance()->disableView();
