@@ -13,7 +13,6 @@ class Controller_Index extends Blog_Web
 
     public function IndexAction()
     {
-
         $this -> display("index/index");
     }
 }
