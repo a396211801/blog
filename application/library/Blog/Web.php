@@ -17,8 +17,8 @@ class Blog_Web extends Yaf_Controller_Abstract
         $this->request_http = new yaf_Request_Http;
         $this->_request = $this->getRequest();
         $this->_session = new Component_Session;
-        $this->getView()->setLayout( $this->layout );
-        Yaf_Dispatcher::getInstance()->disableView();
+        $this->getView()->setLayout( $this->layout );//添加模板文件
+        Yaf_Dispatcher::getInstance()->disableView();//关闭自动渲染
 //        $this->_m = $this->getRequest()->getModuleName();
 //        $this->_c = $this->getRequest()->getControllerName();
 //        $this->_a = $this->getRequest()->getActionName();
