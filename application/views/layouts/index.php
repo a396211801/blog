@@ -6,18 +6,19 @@
     <title>米饭加盐（测试版）</title>
     <meta name="keywords" content="米饭加盐（测试版）,博客模板" />
     <meta name="description" content="测试版主题的个人博客模板，优雅、稳重、大气,低调。" />
-    <link href="css/base.css" rel="stylesheet">
-    <link href="css/index.css" rel="stylesheet">
-    <script src="js/modernizr.js"></script>
+    <link href="/css/base.css" rel="stylesheet">
+    <link href="/css/index.css" rel="stylesheet">
+    <link href="/css/about.css" rel="stylesheet">
+    <script src="/js/modernizr.js"></script>
 </head>
 <body>
 <header>
     <div id="logo"><a href="/"></a></div>
     <nav class="topnav" id="topnav">
-            <a href="index.html">
+            <a href="/index/index">
             <span>首页</span>
             <span class="en">Protal</span></a>
-        <a href="about.html">
+        <a href="/mem/about">
             <span>关于我</span>
             <span class="en">About</span>
         </a>
@@ -40,13 +41,21 @@
             <span>留言版</span>
             <span class="en">Gustbook</span>
         </a>
+        </a><a href="book.html">
+            <span style="color:#999;">登录</span>
+            <span class="en">blogLogin</span>
+        </a>
     </nav>
+
 </header>
 <?php echo $_content_ ?>
 <footer>
     <p>Design by DanceSmile <a href="http://www.miitbeian.gov.cn/" target="_blank">蜀ICP备11002373号-1</a> <a href="/">网站统计</a></p>
 </footer>
-<script src="js/silder.js"></script>
+<script src="/js/silder.js"></script>
+<script type="text/javascript">
+//    alert(Math.ceil(new Date()/3600000));
+</script>
 </body>
 </html>
 
