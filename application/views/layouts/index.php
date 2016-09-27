@@ -9,6 +9,7 @@
     <link href="/css/base.css" rel="stylesheet">
     <link href="/css/index.css" rel="stylesheet">
     <link href="/css/about.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
     <script src="/js/modernizr.js"></script>
 </head>
 <body>
@@ -22,27 +23,27 @@
             <span>关于我</span>
             <span class="en">About</span>
         </a>
-        <a href="newlist.html">
+        <a href="/mem/life">
             <span>慢生活</span>
             <span class="en">Life</span>
         </a>
-        <a href="moodlist.html">
-            <span>碎言碎语</span>
-            <span class="en">Doing</span>
-        </a>
-        <a href="share.html">
-            <span>模板分享</span>
-            <span class="en">Share</span>
-        </a>
-        <a href="knowledge.html">
+<!--        <a href="moodlist.html">-->
+<!--            <span>碎言碎语</span>-->
+<!--            <span class="en">Doing</span>-->
+<!--        </a>-->
+<!--        <a href="share.html">-->
+<!--            <span>技术分享</span>-->
+<!--            <span class="en">Share</span>-->
+<!--        </a>-->
+        <a href="/knowledge/index">
             <span>学无止境</span>
             <span class="en">Learn</span>
-        </a><a href="book.html">
+        </a><a href="/index/book">
             <span>留言版</span>
             <span class="en">Gustbook</span>
         </a>
-        </a><a href="book.html">
-            <span style="color:#999;">登录</span>
+        </a><a href="/login/login/">
+            <span style="color:#999;">登录/注册</span>
             <span class="en">blogLogin</span>
         </a>
     </nav>

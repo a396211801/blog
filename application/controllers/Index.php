@@ -1,6 +1,7 @@
 <?php
 /**
- * User: Administrator
+ * User: lidc
+ * 首页
  */
 class Controller_Index extends Blog_Web
 {
@@ -15,4 +16,14 @@ class Controller_Index extends Blog_Web
     {
         $this -> display("index/index");
     }
+
+    public function LoginAction()
+    {
+        $this->display('index/login');
+    }
+    public function BookAction()
+    {
+        $this->display('index/book');
+    }
+
 }
