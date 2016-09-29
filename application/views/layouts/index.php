@@ -42,10 +42,26 @@
             <span>留言版</span>
             <span class="en">Gustbook</span>
         </a>
-        </a><a href="/login/login/">
-            <span style="color:#999;">登录/注册</span>
-            <span class="en">blogLogin</span>
-        </a>
+        <?php  if(isset($_SESSION['user']))
+        {
+
+        ?>
+            </a><a href="/login/exit/">
+                <span style="color:#999;">欢迎<?php echo $_SESSION['user']; ?></span>
+                <span class="en">退出</span>
+            </a>
+        <?php
+        }else
+        {
+            ?>
+            </a><a href="/login/login/">
+                <span style="color:#999;">登录/注册</span>
+                <span class="en">blogLogin</span>
+            </a>
+        <?php
+        }
+
+        ?>
     </nav>
 
 </header>

@@ -298,7 +298,7 @@ function getCodeChar( $num, $w, $h )
         $text.=$str[$num[$i]];
     }
 
-    $_SESSION['sdkcodechar'] = strtolower( $text );
+    $_SESSION['blogcode'] = strtolower( $text );
 
     $im_x = 160;
     $im_y = 40;

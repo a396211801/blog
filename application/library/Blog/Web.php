@@ -61,4 +61,8 @@ class Blog_Web extends Yaf_Controller_Abstract
         $this->view_path = $view_path;
         return TRUE;
     }
+
+
+
+
 }
