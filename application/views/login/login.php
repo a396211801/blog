@@ -37,7 +37,7 @@
             <img src="/index/yzm?time=<?php echo time(); ?>" width="70" height="33" id="yzmHere"/>
             <span id="changeYZM">看不清换一张</span>
         </div>
-        <input type="checkbox" name="remember-me" id="remember-me" /><label for="remember-me">记住我</label>
+        <input type="checkbox" name="remember-me" id="remember-me" /><label for="remember-me">保存账号</label>
         <div class="forgot-usr-pwd">忘记<a href="#">用户名</a> 或 <a href="#">密码</a>?</div>
         <input type="submit" name="submit" value="GO" />
     </form>

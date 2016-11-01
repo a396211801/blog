@@ -23,8 +23,6 @@ $(function(){
             return false;
         }
     })
-    
-    
     //验证码
     $('#yzmHere').click(function() {
         $('#yzmHere').attr('src', '/index/yzm?time=' + ((new Date()) * 1));

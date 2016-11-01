@@ -27,13 +27,42 @@ class Controller_Index extends Blog_Web
         $this -> display("index/index");
     }
 
+    /**
+     *慢生活首页
+     * */
+    public function LifeAction()
+    {
+        $this->display('index/life');
+    }
+
     public function LoginAction()
     {
         $this->display('index/login');
     }
+
+    /**
+     * 留言板
+     * */
     public function BookAction()
     {
         $this->display('index/book');
+    }
+
+
+    /**
+     *学无止境
+     * */
+    public function KnowledgeAction()
+    {
+        $this->display('index/knowledge');
+    }
+
+    /**
+     *关于我
+     * */
+    public function  AboutAction()
+    {
+        $this->display('index/about');
     }
 
     public function yzmAction()

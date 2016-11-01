@@ -40,10 +40,10 @@ class Controller_Login extends Blog_Web
             {
                 $this->errorArray[] = '请输入验证码';
             }
-            if($this->_session->get('blogcode')!=$code)
-            {
-                $this->errorArray[] = '验证码不正确';
-            }
+//            if($this->_session->get('blogcode')!=$code)
+//            {
+//                $this->errorArray[] = '验证码不正确';
+//            }
 
             if(!$this->errorArray)
             {
@@ -68,9 +68,9 @@ class Controller_Login extends Blog_Web
     }
 
     /**
-     * 瑞出
+     * 退出
      * */
-    public function ExitAction()
+    public function logoutAction()
     {
         session_unset();
         session_destroy();

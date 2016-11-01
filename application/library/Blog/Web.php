@@ -62,6 +62,41 @@ class Blog_Web extends Yaf_Controller_Abstract
         return TRUE;
     }
 
+    /**
+     * 处理权限信息
+     */
+    private function dealPermission()
+    {
+        $user = $this->_session->get('user');
+        $gmodel = new Model_Group();
+        $data = $gmodel->getOneGroup($user['group_id']);
+
+//        var_dump($data);die;
+
+        define("GROUP_ID", $data['id']);
+        define("IS_ADMIN", $data['name'] == "SDK管理员");
+        define("IS_ADVERT", $data['name'] == "SDK推广者");
+
+        //后台跳转
+        if (in_array($data['name'], array("SDK管理员")))
+        {
+            $this->redirect("/blogadmin/index/index");
+            exit;
+        }
+
+        //导航处理
+        $this->nav();
+
+//        //生成权限标记
+//        Permission::createPerssionTag();
+//
+//        //判断是否有权限
+//        if (!Permission::check($this->m, $this->c, $this->a))
+//        {
+//            // $this->redirect("/index/index");
+//        }
+    }
+
 
 
 

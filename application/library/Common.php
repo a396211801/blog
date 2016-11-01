@@ -297,9 +297,7 @@ function getCodeChar( $num, $w, $h )
         $num[$i] = rand( 0, 25 );
         $text.=$str[$num[$i]];
     }
-
     $_SESSION['blogcode'] = strtolower( $text );
-
     $im_x = 160;
     $im_y = 40;
     $im = imagecreatetruecolor( $im_x, $im_y );
@@ -309,9 +307,7 @@ function getCodeChar( $num, $w, $h )
     $tmpC2 = mt_rand( 100, 255 );
     $buttum_c = ImageColorAllocate( $im, $tmpC0, $tmpC1, $tmpC2 );
     imagefill( $im, 16, 13, $buttum_c );
-
     $font = realpath( BASE_PATH . '/public/t1.ttf' );
-
     for ($i = 0; $i < strlen( $text ); $i++)
     {
         $tmp = substr( $text, $i, 1 );

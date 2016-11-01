@@ -15,7 +15,6 @@ class Model_Article extends Smodel{
         $condition_new["LIMIT"] = array($page, $size);
         $condition_new["ORDER"] = "hits desc";
         $list = $this->select("*",$condition_new);
-        echo $this->last_query();
         $count = $this->count($this->getCondition($where));
         return array("list" => $list, "count" => $count);
     }

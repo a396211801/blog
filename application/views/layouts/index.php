@@ -19,11 +19,11 @@
             <a href="/index/index">
             <span>首页</span>
             <span class="en">Protal</span></a>
-        <a href="/mem/about">
+        <a href="/index/about">
             <span>关于我</span>
             <span class="en">About</span>
         </a>
-        <a href="/mem/life">
+        <a href="/index/life">
             <span>慢生活</span>
             <span class="en">Life</span>
         </a>
@@ -35,7 +35,7 @@
 <!--            <span>技术分享</span>-->
 <!--            <span class="en">Share</span>-->
 <!--        </a>-->
-        <a href="/knowledge/index">
+        <a href="/index/knowledge">
             <span>学无止境</span>
             <span class="en">Learn</span>
         </a><a href="/index/book">
@@ -46,15 +46,15 @@
         {
 
         ?>
-            </a><a href="/login/exit/">
-                <span style="color:#999;">欢迎<?php echo $_SESSION['user']; ?></span>
+            </a><a href="/index/logout/">
+                <span style="color:#999;">欢迎：<?php echo $_SESSION['user']; ?></span>
                 <span class="en">退出</span>
             </a>
         <?php
         }else
         {
             ?>
-            </a><a href="/login/login/">
+            </a><a href="/index/login/">
                 <span style="color:#999;">登录/注册</span>
                 <span class="en">blogLogin</span>
             </a>
