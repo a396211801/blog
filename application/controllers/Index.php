@@ -13,7 +13,7 @@ class Controller_Index extends Web
 
     public function IndexAction()
     {
-        Header("Location: /user/index");
+        $this->display('index/index');
     }
 
 }
