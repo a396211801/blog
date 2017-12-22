@@ -19,14 +19,14 @@ class Bootstrap extends Yaf_Bootstrap_Abstract
     //为当前脚本设置 include_path 运行时的配置选项。
     public function _initIncludePath()
     {
-        set_include_path(get_include_path().PATH_SEPARATOR.$this->_config->application->library);
+        set_include_path(get_include_path() . PATH_SEPARATOR . $this->_config->application->library);
     }
 
     //是否开启错误语法，上线后要关掉
     public function _initErrors()
     {
         if ($this->_config->application->showErrors) {
-           ini_set('display_errors', 'On');
+            ini_set('display_errors', 'On');
         } else {
             error_reporting(0);
             ini_set('display_errors', 'Off');
@@ -46,11 +46,16 @@ class Bootstrap extends Yaf_Bootstrap_Abstract
         //对应控制器和里面的action
         $route = new Yaf_Route_Rewrite(
             'index.html/',
-            array('controller'=>'Index',
-                    'action'=>'index'
-                    )
+            array('controller' => 'Index',
+                'action' => 'index'
+            )
         );
-        $router->addRoute('Index_index',$route);
+//        $router->addRoute( 'admin', new Yaf_Route_Rewrite( '/admin$', array("module" => "admin", "controller" => "index", "action" => "index")));
+//        $router->addRoute( '统计', new Yaf_Route_Rewrite( '/ts/*', array("module" => "put", "controller" => "index", "action" => "stats")));
+//        $router->addRoute('我的奖品列表',new Yaf_Route_Rewrite('/record/list.html',array("module" => "put", "controller" => "prize", "action" => "list")));
+//        $router->addRoute('活动投放',new Yaf_Route_Rewrite('/activity',array("module" => "put", "controller" => "index", "action" => "index")));
+
+        $router->addRoute('Index_index', $route);
     }
 
     /**
@@ -73,7 +78,6 @@ class Bootstrap extends Yaf_Bootstrap_Abstract
         //数据错误
         define("YAF_ERR_DATA", 601);
     }
-
 
 
 }
